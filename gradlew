@@ -10,7 +10,7 @@ APP_HOME=$(cd "${0%/*}" && pwd -P) || exit
 APP_NAME="Gradle"
 APP_BASE_NAME=$(basename "$0")
 
-DEFAULT_JVM_OPTS ="-Xmx64m -Xms64m"
+DEFAULT_JVM_OPTS ="-Xmx1024m -Xms128m"
 
 GRADLE_WRAPPER_JAR="$APP_HOME/gradle/wrapper/gradle-wrapper.jar"
 
