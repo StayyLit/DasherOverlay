@@ -1,0 +1,19 @@
+# Gradle / Android Studio
+.gradle/
+**/.gradle/
+**/build/
+local.properties
+**/.idea/
+*.iml
+
+# Android SDK (never commit)
+android-sdk/
+sdk/
+Android/Sdk/
+
+# Archives / zips
+*.zip
+*.jar
+
+# OS / misc
+.DS_Store

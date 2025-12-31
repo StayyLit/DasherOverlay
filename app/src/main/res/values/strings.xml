@@ -1,0 +1,7 @@
+<resources>
+  <string name="app_name">Dasher Overlay</string>
+  <string name="accessibility_desc">Reads offer text on-screen to compute $/mile, $/hour, and estimated time. Processes on-device only.</string>
+  <string name="disclosure_title">Accessibility disclosure</string>
+  <string name="disclosure_body">This app uses an Accessibility Service to read the offer text displayed on your screen (for example: payout and miles) so it can calculate $/mile, $/hour, and estimated time. The app does not automate taps, does not accept/decline orders, and does not send offer data off your device. You can disable this anytime in Android Settings.</string>
+  <string name="consent_button">I understand and agree</string>
+</resources>
