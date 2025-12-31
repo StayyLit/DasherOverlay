@@ -4,4 +4,5 @@
   <string name="disclosure_title">Accessibility disclosure</string>
   <string name="disclosure_body">This app uses an Accessibility Service to read the offer text displayed on your screen (for example: payout and miles) so it can calculate $/mile, $/hour, and estimated time. The app does not automate taps, does not accept/decline orders, and does not send offer data off your device. You can disable this anytime in Android Settings.</string>
   <string name="consent_button">I understand and agree</string>
+  <string name="accessibility_service_desc">Reads DoorDash offer screens to calculate $/mile, $/hour, and time.</string>
 </resources>
