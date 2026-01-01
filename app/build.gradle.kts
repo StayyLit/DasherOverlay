@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.stayylit.dashero"
+    namespace = "com.example.dashero"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.stayylit.dashero"
+        applicationId = "com.example.dashero"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
