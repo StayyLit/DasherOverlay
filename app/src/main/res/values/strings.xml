@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">Dasher Overlay</string>
 
-    <string name="accessibility_service_desc">Reads DoorDash offer screens to calculate $/mile, $/hour, and time.</string>
+    <string name="accessibility_desc">Reads DoorDash offer screens to calculate $/mile, $/hour, and time.</string>
 
     <string name="disclosure_title">Disclosure</string>
     <string name="disclosure_body">This app uses Accessibility to read DoorDash offer screens and compute $/mile, $/hour, and time. It does not tap or automate DoorDash.</string>
