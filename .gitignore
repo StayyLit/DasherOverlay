@@ -1,7 +1,12 @@
 .gradle/
 **/.gradle/
 **/build/
+build/
+.local.properties
 local.properties
 android-sdk/
 *.keystore
 *.jks
+*.apk
+*.aab
+.DS_Store
