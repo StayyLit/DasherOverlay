@@ -10,3 +10,4 @@ android-sdk/
 *.apk
 *.aab
 .DS_Store
+build_log.txt
