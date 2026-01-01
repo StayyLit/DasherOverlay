@@ -1,3 +1,4 @@
+import androidx.compose.material3.ExperimentalMaterial3Api
 package com.example.dashero.ui
 
 import androidx.compose.foundation.layout.*
@@ -9,6 +10,7 @@ import com.example.dashero.data.SettingsRepo
 import com.example.dashero.data.UserSettings
 import kotlinx.coroutines.launch
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SettingsScreen(repo: SettingsRepo, onBack: () -> Unit) {
     val scope = rememberCoroutineScope()
@@ -82,6 +84,7 @@ fun SettingsScreen(repo: SettingsRepo, onBack: () -> Unit) {
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun SwitchRow(label: String, value: Boolean, onChange: (Boolean) -> Unit) {
     Row(horizontalArrangement = Arrangement.SpaceBetween, modifier = Modifier.fillMaxWidth()) {
@@ -90,6 +93,7 @@ private fun SwitchRow(label: String, value: Boolean, onChange: (Boolean) -> Unit
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun StepperInt(label: String, value: Int, min: Int, max: Int, onChange: (Int) -> Unit) {
     Column {
@@ -101,6 +105,7 @@ private fun StepperInt(label: String, value: Int, min: Int, max: Int, onChange: 
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun SliderDouble(label: String, value: Double, min: Double, max: Double, step: Double, onChange: (Double) -> Unit) {
     val steps = ((max - min) / step).toInt().coerceAtLeast(0)
@@ -115,6 +120,7 @@ private fun SliderDouble(label: String, value: Double, min: Double, max: Double,
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun SliderFloat(label: String, value: Float, min: Float, max: Float, step: Float, onChange: (Float) -> Unit) {
     val steps = (((max - min) / step).toInt()).coerceAtLeast(0)

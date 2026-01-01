@@ -1,3 +1,4 @@
+import androidx.compose.material3.ExperimentalMaterial3Api
 package com.example.dashero.ui
 
 import android.content.Context
@@ -14,6 +15,7 @@ import androidx.core.content.ContextCompat
 import com.example.dashero.data.SettingsRepo
 import com.example.dashero.overlay.OverlayService
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun HomeScreen(
     repo: SettingsRepo,
