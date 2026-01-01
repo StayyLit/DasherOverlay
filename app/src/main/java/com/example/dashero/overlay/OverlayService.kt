@@ -1,19 +1,19 @@
 package com.example.dashero.overlay
 
 import kotlinx.coroutines.flow.first
+import android.os.Build
+import com.example.dashero.R
 import android.app.Notification
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.app.Service
 import android.content.Intent
 import android.graphics.PixelFormat
-import android.os.Build
 import android.os.IBinder
 import android.view.Gravity
 import android.view.WindowManager
 import androidx.compose.ui.platform.ComposeView
 import androidx.core.app.NotificationCompat
-import com.example.dashero.R
 import com.example.dashero.data.SettingsRepo
 import kotlinx.coroutines.*
 
