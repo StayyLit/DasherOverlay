@@ -6,8 +6,9 @@ import android.net.Uri
 import android.provider.Settings
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
-import androidx.compose.runtime.*
+import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import com.example.dashero.data.SettingsRepo
@@ -18,6 +19,8 @@ fun HomeScreen(
     repo: SettingsRepo,
     onOpenSettings: () -> Unit
 ) {
+    val context = LocalContext.current
+
     Scaffold(
         topBar = {
             TopAppBar(
@@ -33,12 +36,12 @@ fun HomeScreen(
             verticalArrangement = Arrangement.spacedBy(12.dp)
         ) {
             Text("1) Enable Overlay permission")
-            Button(onClick = { requestOverlayPermission(LocalContext.current) }) {
+            Button(onClick = { requestOverlayPermission(context) }) {
                 Text("Open Overlay Permission")
             }
 
             Text("2) Enable Accessibility service (Offer Reading)")
-            Button(onClick = { openAccessibilitySettings(LocalContext.current) }) {
+            Button(onClick = { openAccessibilitySettings(context) }) {
                 Text("Open Accessibility Settings")
             }
 
@@ -46,8 +49,8 @@ fun HomeScreen(
 
             Text("3) Start / Stop Overlay")
             Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
-                Button(onClick = { startOverlay(LocalContext.current) }) { Text("Start") }
-                OutlinedButton(onClick = { stopOverlay(LocalContext.current) }) { Text("Stop") }
+                Button(onClick = { startOverlay(context) }) { Text("Start") }
+                OutlinedButton(onClick = { stopOverlay(context) }) { Text("Stop") }
             }
 
             Divider()
@@ -55,8 +58,6 @@ fun HomeScreen(
         }
     }
 }
-
-@Composable private fun LocalContext(): Context = androidx.compose.ui.platform.LocalContext.current
 
 private fun requestOverlayPermission(ctx: Context) {
     val intent = Intent(
