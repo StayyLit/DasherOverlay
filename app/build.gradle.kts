@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.stayylit.dasheroverlay"
+    namespace = "com.stayylit.dashero"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.stayylit.dasheroverlay"
+        applicationId = "com.stayylit.dashero"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
